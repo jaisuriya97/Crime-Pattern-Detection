@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='signin.css') }}">
+    <style>
+            h1,label,.Login,span{
+                font-family: 'Noto Serif', serif;
+            }
+            .content h2{
+                color: white;
+                font-family: 'Noto Serif', serif;
+                    font-size: 50px;
+                font-weight: bolder;
+                position: relative;
+                left: 18%;
+                top: 10%;
+            }
+            .content img{
+                position: relative;
+                top: 19%;
+                left: 15%;
+                width: 30px;
+            }
+            .content p{
+                color: white;
+                position: relative;
+                top: 14%;
+                left: 20%;
+                font-size: larger;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+                .content  .p2{
+                position: relative;
+                left: 5%;
+
+            }
+            .error{
+                color: white;
+	font-weight:bold;
+	text-align: center;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50% ,-50%);
+	padding: 10px 0 0 0 ;
+	width: 20%;
+	height:5%;
+	align-items: center;
+	background: rgb(249, 68, 68);
+	border-radius: 5px;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, .2) ;
+            }
+    </style>
+    <title>signin</title>
+</head>
+<body>
+    <a onclick="window.location.href='{{ url_for( 'Home'  ) }}';"><h3>We find You</h3></a>
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="99%" y1="41%" x2="1%" y2="59%"><stop offset="5%" stop-color="#00ed64"></stop><stop offset="95%" stop-color="#00aa57"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,250 0,250 C 74.5386465132257,263.8234283751288 149.0772930264514,277.6468567502576 229,292 C 308.9227069735486,306.3531432497424 394.22947440742007,321.2360013740983 446,328 C 497.77052559257993,334.7639986259017 516.004809343868,333.4091377533494 584,320 C 651.995190656132,306.5908622466506 769.7512882171075,281.1274476125043 853,269 C 936.2487117828925,256.8725523874957 984.9900377877018,258.08107179663347 1039,267 C 1093.0099622122982,275.91892820336653 1152.288560632085,292.54826520096185 1220,291 C 1287.711439367915,289.45173479903815 1363.8557196839574,269.7258673995191 1440,250 C 1440,250 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+        <div class="content">
+                    <h2>Features</h2>
+                    <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48bGluZWFyR3JhZGllbnQgaWQ9IkhvaUpDdTQzUXRzaHpJcllDeE9mQ2FfVkZhejdNa2pBaXUwX2dyMSIgeDE9IjIxLjI0MSIgeDI9IjMuNTQxIiB5MT0iMzkuMjQxIiB5Mj0iMjEuNTQxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIuMTA4IiBzdG9wLWNvbG9yPSIjMGQ3MDQ0Ij48L3N0b3A+PHN0b3Agb2Zmc2V0PSIuNDMzIiBzdG9wLWNvbG9yPSIjMTE5NDVhIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI0hvaUpDdTQzUXRzaHpJcllDeE9mQ2FfVkZhejdNa2pBaXUwX2dyMSkiIGQ9Ik0xNi41OTksNDEuNDJMMS41OCwyNi40MDFjLTAuNzc0LTAuNzc0LTAuNzc0LTIuMDI4LDAtMi44MDJsNC4wMTktNC4wMTkJYzAuNzc0LTAuNzc0LDIuMDI4LTAuNzc0LDIuODAyLDBMMjMuNDIsMzQuNTk5YzAuNzc0LDAuNzc0LDAuNzc0LDIuMDI4LDAsMi44MDJsLTQuMDE5LDQuMDE5CUMxOC42MjcsNDIuMTkzLDE3LjM3Myw0Mi4xOTMsMTYuNTk5LDQxLjQyeiI+PC9wYXRoPjxsaW5lYXJHcmFkaWVudCBpZD0iSG9pSkN1NDNRdHNoeklyWUN4T2ZDYl9WRmF6N01rakFpdTBfZ3IyIiB4MT0iLTE1Ljc3IiB4Mj0iMjYuNDAzIiB5MT0iNDMuMjI4IiB5Mj0iNDMuMjI4IiBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDEzNC45OTkgMjEuMjg3IDM4Ljg3MykiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyYWM3ODIiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyMWI4NzYiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxwYXRoIGZpbGw9InVybCgjSG9pSkN1NDNRdHNoeklyWUN4T2ZDYl9WRmF6N01rakFpdTBfZ3IyKSIgZD0iTTEyLjU4LDM0LjU5OUwzOS41OTksNy41OGMwLjc3NC0wLjc3NCwyLjAyOC0wLjc3NCwyLjgwMiwwbDQuMDE5LDQuMDE5CWMwLjc3NCwwLjc3NCwwLjc3NCwyLjAyOCwwLDIuODAyTDE5LjQwMSw0MS40MmMtMC43NzQsMC43NzQtMi4wMjgsMC43NzQtMi44MDIsMGwtNC4wMTktNC4wMTkJQzExLjgwNywzNi42MjcsMTEuODA3LDM1LjM3MywxMi41OCwzNC41OTl6Ij48L3BhdGg+PC9zdmc+"/>
+                    <p class="p1">Police Of any station can login in our site. <br>
+                    </p>
+                    <p class="p2">They Can update or delete any recoed in the databasse</p>
+        </div>
+        <div class="form">
+            <h1>Sign up</h1><span>Already have an account?</span><a onclick="window.location.href='{{ url_for( 'login'  ) }}';" ><h3 class="Login">LogIn</h3></a>
+            <form  method="post">
+                <label>Name :-</label><br>
+                <input type="text" name="Name" required autocomplete="off"><br><br>
+                <label>Email :-</label><br>
+                <input type="email" name="email" required autocomplete="off"><br><br>
+                <label>Password :-</label><br>
+                <input type="password" name="password" required autocomplete="off"><br><br>
+                <label>Confirm Password :-</label><br>
+                <input type="password" name="cpassword" required autocomplete="off"><br><br>
+                
+                <input type="submit" name="submit" id="submit" >
+        </div>
+       
+        {% with messages=get_flashed_messages()  %}
+        {% if messages %}
+            {% for msg in messages  %}
+            <div class="error">
+                    <p>	{{msg}}</p>
+                </div>        
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+
+    </form>
+</body>
+</html>

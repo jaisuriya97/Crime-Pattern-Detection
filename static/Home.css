@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+body,html{
+    width: 100%;
+}
+*{
+    margin: 0%;
+
+
+}
+::selection {
+    background:  #00b34bd3;;
+    color: white;
+  }
+.navbardiv{
+    width: 100%;
+    display: flex;
+    position: sticky;
+} 
+.navbardiv h3{
+    text-align: center;
+    padding: 20px;
+    color: #023430;
+    font-family: 'Ms Madi', cursive;
+    font-size: xx-large;
+    margin: 0%;
+}
+.navbardiv h3:hover{
+    color:#00ED64 ;
+}
+
+ .logo{
+    width: 9%;
+    position: absolute;
+    top: -35%;
+    left: 0%;    
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    left: 60%;
+    top: 5%;
+}
+ ul input{
+    border: none;
+    height: 30px;
+    width: 65px;
+    border-radius:6px;
+    background-color: #00684A;
+    color: white;
+    font-weight: bolder;
+
+}
+ul .login{
+    border: none;
+    height: 30px;
+    width: 55px;
+    border-radius:6px;
+    background-color: #00684A;
+    color: white;
+    font-weight: bolder;
+}
+ul input:hover{
+    background-color: #00ED64;
+}
+
+ li{
+    padding: 10px;
+    margin: 10px;
+   
+
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color:#00684A ;
+    
+}
+a:hover{
+    color: #00b34b;
+}
+.hero{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+
+}
+.hero .bg{
+    width: 55%;
+    position: relative;
+    left: 15%;
+    top: -5vh;
+}
+.hero .quotes{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    color: #00b34b;
+    font-size: xx-large;
+}
+.hero .ab{
+    position: absolute;
+    top: 27%;
+    left: 55%;
+    color: #00b34b;
+    font-size: larger;
+    font-weight: lighter;
+}
+.hero .find {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    border-radius: 30px;
+    font-size: xx-large;
+    width: 10%;
+    height: 12%;
+    background:#00ed64; 
+    border-radius: 10px;
+    background-color: #00ed64;
+    color: white;
+    border: 1% solid;
+    border-color:  #004f70 ;
+    box-shadow: 0 0 25px rgba(#00b34be8);
+    transition-duration:0.5s;
+}
+  @supports (mask-image: paint(smooth-corners)) {
+    .el.is-loaded {
+      border-radius: 0;
+      mask-image: paint(smooth-corners);
+      --smooth-corners: 4.8;
+    }
+  }
+.hero .find:hover{
+    border-radius: 61px;
+    
+    
+    
+}  
+span{
+    position: absolute;
+    top: 16%;
+    left: 3.5%;
+    width: 25px;
+    color: #00b34b;
+}
+.arrow{
+    position: absolute;
+    top: 80%;
+    width: 50%;
+    height: 100px;
+    left: 25%;
+}
+.mi{
+    position: absolute;
+    top: 90%;
+    left: 54%;
+    font-weight: 500;
+    font-size: larger;
+    color: #3F3D56;
+}
+.findinu{
+    position: relative;
+    background-color: #001E2B;
+    top: 750px;
+    height: 1500px;
+    border-radius: 0 150px 0 0;
+}
+.findinu h1{
+    color: white;
+    font-size: 350%;
+    padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 80px;
+}
+.findinu p{
+    color: white;
+    padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 80px;
+}
+.secondpage{
+    width: 50%;
+    position: relative;
+    height: 50%;
+    top: -19em;
+    left: -2em;
+    float: right;
+}
+.Search{
+    position: relative;
+    top: 10%;
+    left: 20%;
+    font-size: xx-large;
+    width: 10%;
+    height: 4%;
+    background:#00ed64; 
+    border-radius: 10px;
+    background-color: #00ed64;
+    color: #001E2B;
+    border:solid 1px silver;
+    box-shadow: 0 0 25px rgba(#00b34be8);
+    transition-duration:0.5s;
+}
+.Search:hover{
+    border-radius: 61px;
+}
+.about{
+    width: 100%;
+    height: 25%;
+    position: relative;
+    top: 25%;
+    background-color: #004f70;
+
+}
+.about p{
+    position: relative;
+    top: -100%;
+    left: 50%;
+    width: 40%;
+}
+.about p a{
+    color: #00b34b;
+}
+.about .animated{
+    width: 50%;
+}
+.contact{
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    position: absolute;
+    top: 320%;
+    justify-items:center ;
+    text-align: center;
+    border-radius: 50px;
+}
+.contact .h1{
+    align-items: center;
+   
+}

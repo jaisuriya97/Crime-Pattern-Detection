@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+html,body{
+    height: 100%;
+    background:#00793349;
+}
+*{
+    margin: 0;
+}
+svg{
+    position: relative;
+    top: -70px;
+    left: -50px;
+    width: 60%;
+}
+form{
+    position: absolute;
+    top: 45%;
+    left: 58%;
+    float: right;
+}
+form p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #004f70;
+    position: absolute;
+    top: 300%;
+    left: 40%;
+    float: right;
+}
+.input{
+    color: #004f70;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    height: 55px;
+    width: 500px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #def7e5;
+    border-bottom: solid 2px  #002e42;
+    box-shadow: 0 0 25px rgba(#00b34be8);
+}
+#submit{
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    border-radius: 30px;
+    font-size: xx-large;
+    width: 200px;
+    height: 60px;
+    background:#00ed64; 
+    border-radius: 10px;
+    background-color: #00ed64;
+    color: #002c3f;
+    border: 1% solid;
+    border-color:  #002c3f;
+    box-shadow: 0 0 25px rgba(#00b34be8);
+}
+#submit:hover{
+    border-radius: 61px;
+    transition-duration:0.5s;
+
+
+}
+img{
+    position: absolute;
+    left: 40%;
+    top: 330%;
+}
+.op{
+    position: relative;
+    color: white;
+    width: 90%;
+    text-align: center;
+    top: -50%;
+    left: -8%;
+    border-radius: 10px;
+    margin: 10%;
+    padding: 50px;
+    background-color: #004f70;
+}
+h3{
+    position: absolute;
+    top: 10px;
+    left:   45%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Ms Madi', cursive;
+    font-size: xx-large;
+    margin: 0%;
+    pointer-events: painted;
+}
+h3:hover{
+    color:#004f70;
+    transition-duration:0.5s;
+}

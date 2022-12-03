@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='search.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <a onclick="window.location.href='{{ url_for( 'Home'  ) }}';"><h1 class="logo">We find You</h1></a>
+    <div class="container">
+        <form method="post">
+            <div class="select">
+                <label for="cars">Choose a Crime:-</label><br><br>
+                <select name="crime" id="cars">
+                    <option value="1">Victims of rape</option>
+                    <option value="2">Auto theft</option>
+                    <option value="3">crimes committed against children</option>
+                </select><br>
+            </div><br>
+           <div class="loc">
+            <label >Location</label><br><br>
+            <input name="location" type="text"><br>
+           </div><br>
+            <div class="submit">
+                <input type="submit"> 
+            </div>
+            
+            
+        </form>
+    </div><div class="output">
+        <h1> Your OutPut</h1>
+        {% with messages=get_flashed_messages()  %}
+            {% if messages %}
+                {% for msg in messages  %} 
+                        <p>{{msg}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+   
+</body>
+</html>

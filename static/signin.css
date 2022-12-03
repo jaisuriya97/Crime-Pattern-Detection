@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+*{
+    margin: 0%;
+}
+::selection {
+    background:  #00b34bd3;;
+    color: white;
+  }
+body,html{
+    height: 100%;
+    background-color: #023430;
+    overflow: hidden; /* Hide scrollbars */
+    width: 100%;
+}
+h3{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Ms Madi', cursive;
+    font-size: xx-large;
+    margin: 0%;
+    pointer-events: painted;
+}
+h3:hover{
+    color:#00ED64 ;
+    transition-duration:1s;
+}
+.form{
+    background-color: white;
+    width:30%;
+    height: 87%;
+    display: flex;
+    align-items: center;
+    border-radius: 100px 20px 100px 20px;
+    position: relative;
+    left: 45%;
+    top: 0;
+    color: #00ED64;
+    border: solid 2px #061621;
+}
+label{
+    color:#061621;
+    margin-left: 100px;
+    font-weight: bolder;
+}
+.form input{
+    margin-top: 5px;
+    width: 250px;
+    margin-left: 120px;
+      height: 30px;
+      border: solid 1px #061621; /* <-- This thing here */
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 900;
+}
+#submit{
+    position: absolute;
+    left: 18%;
+    top: 73%;
+    border-radius: 10px;
+    font-size: large;
+    width: 100px;
+    height: 45px;
+    background-color: #00ed64;
+    color:#061621 ;
+    border: 1% solid;
+    border-color:  #004f70 ;
+
+    font-weight: 400;
+    cursor: pointer;
+}
+#submit:hover{
+    border-radius: 61px;
+    color: white;
+    background-color: #061621;
+    transition-duration:1s;
+
+
+}
+#svg{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 105%;
+}
+.content{
+    background-color: #00684A;
+    height: 80%;
+    width: 50%;
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    border-radius: 200px 0 200px 50px;
+    border: solid 2px #00ED64;
+}
+h1{
+    color: #061621;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-weight: bolder;
+}
+h1:hover{
+    color: #00ed64;
+    transition-duration:1s;
+}
+span{
+    color: #004f70;
+    font-size: small;
+    font-weight: 700;
+    position: absolute;
+    top: 550px;
+    left: 120px;
+}
+.Login{
+    position: absolute;
+    color: #061621;
+    font-size: small;
+    font-weight: 100;
+    top: 530px;
+    left: 60%;
+    cursor: pointer;
+}
+.Login:hover{
+    font-weight: 900;
+    color: #061621;
+    transition-duration:1s;
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+*{
+    margin: 0%;
+}
+::selection {
+    background:  #00b34bd3;
+    color: white;
+  }
+body,html{
+    height: 100%;
+    overflow: hidden; /* Hide scrollbars */
+    width: 100%;
+}
+.des{
+    background-color: #00684a;
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0 100px 0 0;
+    top: 0;
+}
+.des .logo{
+    width: 50%;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    padding: 20px;
+    color: white;
+    font-family: 'Ms Madi', cursive;
+    font-size: xx-large;
+    margin: 0%;
+    pointer-events: painted;
+}
+.logo:hover{
+    color:#00ED64 ;
+    transition-duration:1s;
+}
+svg{
+    width: 70%;
+    position: relative;
+    left: 35%;
+}
+.wave{
+    position: absolute;
+    top: 550px;
+    left: -599px;
+    width: 211%;
+    border-radius: 10px;
+    border: solid 5px  #00684a;
+}
+label{
+    color:white;
+    margin: 50px;
+    font-size: large;
+    font-weight: lighter;
+}
+.des .form{
+    position: relative;
+    top: 3%;
+    left: 1%;
+    margin: 50px;
+}
+.des .form input{
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 250px;
+    margin-left: 100px;
+    height: 30px;
+    border: solid 1px #061621; /* <-- This thing here */
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 900;
+}
+.des .form  p{
+    color: #061621;
+    position: absolute;
+    top: 280px;
+    left: 120px;
+
+}
+.des .form .signin{
+    position: relative;
+    top: 79px;
+    font-size: 15px;
+    left: 280px;
+    cursor: pointer;
+}
+#submit{
+    position: absolute;
+    left: 15%;
+    top: 90%;
+    border-radius: 10px;
+    font-size: large;
+    width: 100px;
+    height: 45px;
+    background-color: #00ed64;
+    color:#061621;
+    border: 1% solid;
+    border-color:  #004f70 ;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#submit:hover{
+    border-radius: 61px;
+    color: white;
+    background-color: #061621;
+    transition-duration:1s;
+}
+.title{
+    color: white;
+    font-family: 'Noto Serif', serif;
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+.error{
+    color: white;
+font-weight:bold;
+text-align: center;
+position: absolute;
+top: 20%;
+left: 50%;
+text-align: center;
+transform: translate(-50% ,-50%);
+padding: 10px 0 0 0 ;
+width: 30%;
+height:5%;
+align-items: center;
+background: rgb(249, 68, 68);
+border-radius: 5px;
+box-shadow: 0 15px 20px rgba(0, 0, 0, .2) ;
+}
